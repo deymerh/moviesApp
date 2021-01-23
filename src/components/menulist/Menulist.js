@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { MenuListMovies } from './style';
 
 export const Menulist = () => {
@@ -7,19 +7,16 @@ export const Menulist = () => {
     <MenuListMovies>
       <ul>
         <li>
-          <Link to="/">All</Link>
+          <NavLink to="/" activeClassName="activated">All</NavLink>
         </li>
         <li>
-          <Link to="/">New Release</Link>
+          <NavLink to="/popular" activeClassName="activated">Most popular</NavLink>
         </li>
         <li>
-          <Link to="/">Most popular</Link>
+          <NavLink to="/trends" activeClassName="activated">Trends</NavLink>
         </li>
         <li>
-          <Link to="/">Trends</Link>
-        </li>
-        <li>
-          <Link to="/">Recomendations</Link>
+          <NavLink to="/recomendations" activeClassName="activated">Recomendations</NavLink>
         </li>
       </ul>
     </MenuListMovies>
