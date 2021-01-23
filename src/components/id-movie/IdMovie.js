@@ -8,7 +8,6 @@ export const IdMovie = () => {
   const urlImg = 'https://image.tmdb.org/t/p/w500';
   let { id } = useParams();
   const { data } = useFetch(`https://api.themoviedb.org/3/movie/${id}?api_key=a724f2ea4c6c46898861f4ea2bdf664c&language=es-ES`);
-  console.log(data)
 
   return (
     <>
